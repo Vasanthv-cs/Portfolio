@@ -2,154 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Fixed capitalization -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title> 
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <!-- Boxicons CDN (needed for social icons to display) -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
 </head>
 <body>
+    <!-- Parallax Background -->
+    <div class="parallax-container">
+        <div class="parallax-layer"></div>
+        <div class="parallax-layer"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
 
     <header class="header">
-        <a href="#home" class="logo">Portfolio</a>
+        <a href="#home" class="logo">Portfolio.</a>
+        
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <nav class="navbar">
-           <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Skills</a>
-            <a href="#Skills" style="--i:4">Portfolio</a>
-            <a href="#Contact" style="--i:5">Contact</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#services" style="--i:3;">Services</a>
+            <a href="#skills" style="--i:4;">Skills</a>
+            <a href="#portfolio" style="--i:5;">Projects</a>
+            <a href="#contact" style="--i:6;">Contact</a>
         </nav>
     </header>
 
     <section class="home" id="home">
-    <div class="home-container">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Vasanth V</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>
+        <div class="home-container">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1 class="glitch-text" data-text="Vasanth V">Vasanth V</h1>
+                <h3>And I'm a <span class="text"></span></h3>
+                <p>
                 Highly motivated and detail-oriented aspiring full-stack developer,<br>
                 with a strong foundation in web technologies and a deep interest in AI-driven solutions.
             </p>
-            <div class="home-sci">
+                <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100083169995957&mibextid=rS40aB7S9Ucbxw6v" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/vinz_e_ditz?utm_source=qr&igsh=anlnbnpiOWVtdzEy" style="--i:8"><i class='bx bxl-instagram'></i></a>
                 <a href="https://github.com/Vasanthv-cs" style="--i:9"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/vasanth-vd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--i:10"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#about" class="btn-box">More About Me</a>
+                
+                <a href="#about" class="btn-box">More About Me</a>
+            </div>
             
-
+            <div class="home-img">
+                <img src="images/edd.PNG" alt="Profile Picture">
+            </div>
         </div>
+    </section>
 
-        <div class="home-img">
-            <img src="images/edd.PNG" alt="Profile Image">
-    </div>
-    </div>
-</section>
-
-    
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/edd.PNG">
+            <video width="500" autoplay loop muted>
+    <source src="images/generated-video.mp4" type="video/mp4">
+</video>
         </div>
+        
         <div class="about-text">
-            
-    <h2>About <span>Me</span></h2>
-    <h2>Full Stack developer</h2>
-    <br>
+            <h2>About <span>Me</span></h2>
+            <h4>Full-Stack Developer!</h4>
+            <br>
     <p>
         I am an enthusiastic and highly motivated full-stack developer. I specialize in creating responsive and dynamic web applications. My expertise includes HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have hands-on experience in both front-end and back-end development. I am passionate about solving real-world problems through technology. I enjoy learning new tools, frameworks, and staying updated with industry trends. I value clean code, performance optimization, and user-centric design. I'm eager to contribute to innovative projects in a collaborative environment.
     </p>
-     <a href="#Contact" class="btn-box">More About Me</a>
+     <a href="https://www.linkedin.com/in/vasanth-vd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn-box" target="_blank">More About Me</a>
      <a href="assests/Vasanth_Res.docx" class="btn-box" target="_blank" >View Resume</a>
     </div>
     </section>
 
-    <section>
-    <div class="services" id="services">
+    <section id="services">
         <div class="container">
             <h1 class="sub-title">My <span>Services</span></h1>
             <div class="services-list">
                 <div>
-                    <i class='bx bx-paint' style='color: #00eeff;'></i> <!-- Example icon, you can change -->
+                    <i class='bx bx-code' style="color: #00eeff;"></i>
                     <h2>UI/UX Design</h2>
-                    <p>
+                     <p>
                         I craft user-centric designs that combine aesthetics with usability. From wireframes to interactive prototypes,
                         I ensure seamless digital experiences across web and mobile platforms. Using tools like Figma and Adobe XD,
                         I design intuitive interfaces that engage users and drive results. Every element is thoughtfully placed to enhance clarity and visual flow.
                     </p>
-                    <a href="#" class="read">learn more</a>
+                    <a href="https://www.figma.com/design/XIbLMHyZmzYV20snqQg90O/course-portal?node-id=0-1&t=NPQmLv3K2i2dP60I-1" class="read" target="_blank">Learn more</a>
                 </div>
                 <div>
-                    <i class='bx bx-desktop' style='color: #00eeff;'></i> <!-- Example icon, you can change -->
-                    <h2>Responsive Front-End Development</h2>
+                    <i class='bx bx-crop' style="color: #00eeff;"></i>
+                    <h2>Web Development</h2>
                     <p>
                         I design visually appealing and responsive front-ends using HTML, CSS, JavaScript, and Tailwind. My UIs adapt seamlessly across devices while maintaining design consistency. I focus on accessibility, fast loading speeds, and clean interactions to enhance user engagement.
                     </p>
-                    <a href="https://vasanthv-cs.github.io/online-course/" class="read">learn more</a>
+                    <a href="https://vasanthv-cs.github.io/online-course/" class="read">Learn more</a>
                 </div>
                 <div>
-                    <i class='bx bx-brain' style='color: #00eeff;'></i> <!-- Example icon, you can change -->
-                    <h2>AI/ML Integration</h2>
+                    <i class='bx bxl-apple' style="color: #00eeff;"></i>
+                    <h2>AI Development</h2>
                     <p>
                         I develop intelligent systems that leverage machine learning for real-time predictions and automation. Projects include speech-to-text converters, AI hospital monitoring systems, and data-driven insights. I use Python, TensorFlow, and OpenAI APIs to build smart applications that adapt and improve over time. 
                     </p>
-                        <a href="https://vasanthv-cs.github.io/sign-language-translator/" class="read">learn more</a>
+                    <a href="https://vasanthv-cs.github.io/sign-language-translator/" class="read">Learn more</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<h1 class="sub-title">My <span>Skills</span></h1>
-
-<section class="skills-section">
-    <div class="container1" id="Skills">
-        <h1 class="heading1">Technical Skills</h1>
-        <div class="Technical-bars">
-            <div class="bar"><i  style="color: #c95d2e" class='bx bxl-html5'></i>
-                <div class="info">
-                    <span>HTML</span>
+    <section id="skills">
+        <div class="container1">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar"><i  style="color: #c95d2e" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line html">
-                    <span></span>
+                <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
-                <div class="info">
-                    <span>CSS</span>
+                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line JavaScript">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress-line css">
-                    <span></span>
+                <div class="bar"><i style="color: #c32ec9" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line Python">
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
-                <div class="info">
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress-line JavaScript">
-                    <span></span>
-                </div>
-            </div>
-
-            <div class="bar"><i style="color: #c32ec9" class='bx bxl-python'></i>
-                <div class="info">
-                    <span>Python</span>
-                </div>
-                <div class="progress-line Python">
-                    <span></span>
-                </div>
-            </div>
-
-
-            <div class="bar"><i  style="color: #D0A384 " class='bx bxl-java'></i>
+                <div class="bar"><i  style="color: #D0A384 " class='bx bxl-java'></i>
                 <div class="info">
                     <span>Java</span>
                 </div>
@@ -157,130 +171,134 @@
                     <span></span>
                 </div>
             </div>
-
-
-            <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
-                <div class="info">
-                    <span>React</span>
-                </div>
-                <div class="progress-line React">
-                    <span></span>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line React">
+                        <span></span>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
 
         <div class="container1">
             <h1 class="heading1">Professional Skills</h1>
             <div class="radial-bars">
-
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Creativity</div>
-            </div>
-
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">75%</div>
-                <div class="text">Communication</div>
-            </div>
-
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">80%</div>
-                <div class="text">Problem Solving</div>
-            </div>
-
-            <div class="radial-bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">85%</div>
-                <div class="text">TeamWork</div>
-            </div>
-        </div>
-      </div>   
-    </section>
-
-
-    <section>
-    <div id="Portfolio">
-        <div class="main-text" id="project">
-            <h2>Latest <span>Project</span></h2>
-            <div class="Portfolio-content">
-                <!-- Project cards here -->
-
-                    <div class="row">
-                        <img src="images/Courses.jpg">
-                        <div class="layer">
-                            <h5>Online Course Portal</h5>
-                        <p>
-                        A simple and responsive website that displays a list of online courses using HTML, CSS, and JavaScript. Users can view course titles, descriptions, and categories. Includes a clean layout, hover effects, and basic filtering functionality to explore different course topics.
-                        </p>
-                        <a href="https://vasanthv-cs.github.io/online-course/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <img src="images/sigg.webp">
-                        <div class="layer">
-                            <h5>Sign Language Detection</h5>
-                        <p>
-                        An AI-powered web project that uses HTML, JavaScript along with TensorFlow.js to detect and recognize basic hand signs in real time through a webcam. It translates the detected signs into alphabet words, demonstrating how artificial intelligence can be applied to improve communication for the hearing-impaired.
-                        </p>
-                        <a href="https://vasanthv-cs.github.io/sign-language-translator/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <img src="images/job.jpg">
-                        <div class="layer">
-                            <h5>Online Job Portal</h5>
-                        <p>
-                        A dynamic and responsive Online Job Portal built using React. It allows users to browse job listings, search and filter roles by title or location, and submit applications through interactive forms. The project features reusable components, state management with hooks, and a clean UI for enhanced user experience.
-                        </p>
-                        <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Communication</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">TeamWork</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="Contact" id="Contact">
-        <div class="Contact-text">
-            <h2>Contact<span> Me</span></h2>
-            <h4>Let's work Together</h4>
-            <p>
-            I'm always open to discussing new projects, creative ideas, or collaboration opportunities. Whether you have a question or just want to say hello, feel free to reach out — I'll get back to you as soon as possible.
-            </p>
-
-            <div class="Contact-list">
-                <ul>
-                    <li><i class='bx bxs-send'></i>vasanthvvt@gmail.com</li>
-                    <li><i class='bx bxs-phone'></i>0123456789</li>
-                </ul>
+    <!-- 🎬 ENHANCED PORTFOLIO SECTION WITH PERFECT LAYOUT -->
+    <section id="portfolio">
+        <div class="main-text" id="project">
+            <h2><span>Latest</span> Projects</h2>
+            
+            <div class="Portfolio-content">
+                <div class="row" style="--i:1;">
+                    <img src="images/Courses.jpg" alt="Easy Online Course Portal">
+                    <div class="layer">
+                        <h5>Online Course Portal</h5>
+                        <p>A dynamic and responsive Online Course Portal built using Html,CSS,Js...</p>
+                        <a href="https://vasanthv-cs.github.io/online-course/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                
+                <div class="row" style="--i:2;">
+                    <img src="images/sigg.webp" alt="Sign Language Translator">
+                    <div class="layer">
+                       <h5>Sign Language Detection</h5>
+                        <p>An AI-powered web project that uses HTML, JavaScript along with TensorFlow.js to detect and recognize basic hand signs...</p>
+                        <a href="https://vasanthv-cs.github.io/sign-language-translator/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <div class="row" style="--i:3;">
+                    <img src="images/job.jpg" alt="Online Job Portal">
+                    <div class="layer">
+                        <h5>Online Job Portal</h5>
+                        <p>A dynamic and responsive Online Job Portal built using React...</p>
+                        <a href="https://vasanthv-cs.github.io/JOB-PORTAL/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <div class="row" style="--i:4;">
+                    <img src="img1.jpg" alt="Weather Prediction App">
+                    <div class="layer">
+                        <h5>AI Weather Prediction</h5>
+                        <p>Machine learning-powered weather forecasting app with location-based predictions and severe weather alerts.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <div class="row" style="--i:5;">
+                    <img src="img2.jpg" alt="Task Management System">
+                    <div class="layer">
+                        <h5>Smart Task Manager</h5>
+                        <p>AI-enhanced productivity app with intelligent scheduling, team collaboration, and automated workflow optimization.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <div class="row" style="--i:6;">
+                    <img src="img3.jpg" alt="Social Analytics Dashboard">
+                    <div class="layer">
+                        <h5>Social Media Analytics</h5>
+                        <p>Comprehensive dashboard for social media management with AI-powered insights, trend analysis, and engagement optimization.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
+    <section class="Contact" id="contact">
+        <div class="Contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work Together</h4>
+            <p>I'm always excited to collaborate on innovative projects, tackle new challenges, and bring creative ideas to life. Whether you have a question, need a developer, or just want to say hi — my inbox is always open.</p>
+            <div class="Contact-list">
+                <li><i class='bx bxs-send'></i> vasanth@gmail.com</li>
+                <li><i class='bx bxs-phone'></i> +91 9876543210</li>
+            </div>
             <div class="Contact-icons">
                 <a href="https://www.facebook.com/profile.php?id=100083169995957&mibextid=rS40aB7S9Ucbxw6v"> <i class='bx bxl-facebook-circle'></i> </a>
                 <a href="https://github.com/Vasanthv-cs"> <i class='bx bxl-github'></i></a>
                 <a href="https://www.instagram.com/vinz_e_ditz?utm_source=qr&igsh=anlnbnpiOWVtdzEy"> <i class='bx bxl-instagram'></i></a>
                 <a href="https://www.linkedin.com/in/vasanth-vd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class='bx bxl-linkedin'></i></a>
             </div>
-
         </div>
 
         <div class="Contact-form">
@@ -288,20 +306,19 @@
                 <input type="text" placeholder="Enter Your Name" required>
                 <input type="email" placeholder="Enter Your Email" required>
                 <input type="text" placeholder="Enter Your Subject">
-                <textarea placeholder="Enter Your Message" required></textarea>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
                 <input type="submit" value="Submit" class="send">
             </form>
         </div>
-
     </section>
 
     <div class="last-text">
         <p>Developed with Love By Vasanth V @2025</p>
     </div>
+
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
